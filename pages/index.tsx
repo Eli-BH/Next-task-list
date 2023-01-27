@@ -75,8 +75,8 @@ export default function Home() {
         width: "100vw",
         height: "100vh",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
         flexDirection: "column",
       }}
     >
@@ -90,7 +90,7 @@ export default function Home() {
         <button type="submit">Add +</button>
       </form>
 
-      <ol>
+      <ol style={{backgroundColor: "beige", display: "flex", flexDirection: "column", alignContent: "left", width: "50%" }}>
         {tasks &&
           tasks.map((item: any) => (
             <div key={item._id}>
